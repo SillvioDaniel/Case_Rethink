@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Case Rethink</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
+  </head>
+  <body>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label for="filtro_nome" class="form-label">Filtrar por Nome</label>
+                <input type="text" required class="form-control" id="filtro_nome">
+              </div>
+              <button onclick="nome_filtrado()"  class="btn btn-success">Filtrar</button>
+              <div id="nomes_filtro"></div>
+        </div>
+        <div align="center" class="col-md-4">
+            <label for="retorna_nomes" class="form-label">Retornar nomes</label>
+            <button onclick="lista_nomes()" id="retorna_nomes" class="btn btn-success">Retornar</button>
+            <div id="nomes"></div>
+            </div>
+        <div align="center" class="col-md-4">
+            <label for="ad_id" class="form-label">Adicionar id</label>
+            <button onclick="adicionar_id()" id="ad_id" class="btn btn-success">Confirmar</button>
+            
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <label class="form-label">Selecionar quem pode se habilitar</label>
+                <button onclick="maiores()"  class="btn btn-success">Confirmar</button>
+                <div id="maiores"></div>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Calcular média de idade </label>
+                <button onclick="media()"  class="btn btn-success">Calcular</button>
+                <div id="media"></div>
+            </div>
+            
+        </div>
+
+
+  <script type="text/javascript" src="src/JS/script.js">
+      
+</script>
+</body>
+</html>
